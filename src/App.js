@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './css/App.css';
+import '../src/template/onepirate/css/App.css';
 import Home from './template/onepirate/Home'
 
 function App() {
