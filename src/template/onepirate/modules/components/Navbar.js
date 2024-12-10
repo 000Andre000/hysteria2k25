@@ -6,9 +6,15 @@ import Toolbar from '../components/Toolbar';
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Handlers for opening and closing the overlay
-  const openNav = () => setIsOpen(true);
-  const closeNav = () => setIsOpen(false);
+  const openNav = () => {
+    setIsOpen(true);
+    document.body.classList.add("no-scroll"); // Lock scrolling when overlay opens
+  };
+
+  const closeNav = () => {
+    setIsOpen(false);
+    document.body.classList.remove("no-scroll"); // Unlock scrolling when overlay closes
+  };
 
   return (
     <div>
@@ -26,6 +32,7 @@ function Navbar() {
 
         {/* Overlay */}
         <div
+          id="overscr"
           className={`overlay ${isOpen ? "open" : ""}`}
           style={{ width: isOpen ? "100%" : "0" }}
         >

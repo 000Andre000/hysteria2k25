@@ -28,6 +28,7 @@ body {
   /* Logo image styles */
   .navbar .logo-img {
     padding-top: 10px;
+    margin-top: 5px;
     height: 50px;
     width: 50px;
     display: block;
@@ -59,6 +60,10 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+  }
+
+  .no-scroll {
+    overflow: hidden; /* Prevent scrolling */
   }
   
   .overlay-content {
