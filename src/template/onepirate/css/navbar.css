@@ -10,7 +10,9 @@ body {
     width: 100%;
     overflow: hidden;
     z-index: 1000;
+    background-color: #444;
   }
+
   
   .navbar .menu-icon {
     font-size: 35px;
